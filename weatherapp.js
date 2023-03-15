@@ -14,7 +14,7 @@ const times = document.querySelector("#locatime")
 const humidity=document.querySelector(".humidity")
 const wind = document.querySelector(".wind")
 const weatherimg = document.querySelector(".img")
-const img_lst = ["cloud.png","rain.png","sun.png","storm.png","snow.jpg","clean.png"]
+const img_lst = ["cloud.png","rain.png","sun.png","storm.png","snow.png","clean.png"]
 
 button.addEventListener("click", async function () {
     times.innerHTML = time
