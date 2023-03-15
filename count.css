@@ -1,0 +1,80 @@
+body{
+    background-image: url("./images/weather.jpg");
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: jump 2s infinite;
+}
+
+.app-main{
+    margin-top: 10%;
+    width: 30%;
+    background-color:aliceblue;
+
+}
+
+@keyframes jump{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.location-detail{
+    font-weight: bold;
+}
+.weather-status{
+    padding:20px;
+}
+.temp{
+    font-size: 50px;
+    font-weight:700;
+    margin:20px 0;
+    text-shadow: 2px 4px rgba(0,0,0,3);
+}
+.min-max, .weather{
+    font-size: 12px;
+    font-weight:600;
+}
+.img{
+    width: 30%;
+}
+h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: hotpink;
+}
+#button{
+    background-color: blueviolet;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aquamarine
+}
+
+@media (max-width:768px) {
+    .app-main{
+        width:70%;
+    }
+}
+@media (max-width:992px) {
+    .app-main{
+        width:50%;
+    }
+}
+@media (max-width:576px) {
+    .app-main{
+        width:80%;
+    }
+}
