@@ -6,7 +6,9 @@ const temp = document.querySelector(".temp")
 const tempMin = document.querySelector(".min")
 const tempMax = document.querySelector(".max")
 const today = new Date()
-const time = `${today.getDate()}/${today.getMonth()}/${today.getFullYear()}`
+const month = today.getMonth()+1
+const time = `${today.getDate()}/${month}/${today.getFullYear()}`
+
 console.log(today.getDate())
 console.log(today.getMonth() + 1)
 console.log(today.getFullYear())
